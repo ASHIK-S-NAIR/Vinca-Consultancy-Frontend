@@ -1,0 +1,124 @@
+/* hero section starts */
+
+.hero-section {
+  width: 100%;
+}
+
+.hero {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 43% 57%;
+  height: auto;
+  padding: 1em 0 4em 0;
+}
+
+.hero-bg {
+  width: 100%;
+}
+
+.hero-info {
+  height: 100%;
+  padding-top: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.hero-subheading {
+  font-weight: 300;
+  margin-bottom: 0.5em;
+  word-spacing: 0.3rem;
+  font-family: var(--cursive-font);
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.hero-heading {
+  font-size: 6rem;
+  font-weight: 300;
+  line-height: 6rem;
+  margin-bottom: 0.3em;
+  color: var(--main-color);
+}
+
+.hero-mainLine {
+  font-size: 1.1rem;
+  width: 100%;
+  line-height: 2rem;
+  word-spacing: 3px;
+  margin-bottom: 1.5em;
+}
+
+.hero-mainLine span {
+  font-weight: 1000;
+}
+
+.hero-cta {
+  background-color: var(--secondary-color);
+  padding: 0.5em 2em;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-radius: 5px;
+  color: #fff;
+  transition: 0.3s color ease-out;
+}
+
+.hero-cta:hover {
+  background-color: var(--tertiary-color);
+  box-shadow: 3px 3px 10px rgba(0, 150, 100, 0.3);
+}
+
+/* tablet responsive starts */
+
+@media only screen and (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding-top: 1.3em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-info {
+    text-align: center;
+    margin-bottom: 0.5em;
+  }
+
+  .hero-bg {
+    position: static;
+    width: 100%;
+    margin-bottom: 2em;
+  }
+
+  .hero-subheading {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0 auto;
+  }
+
+  .hero-heading {
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+    margin-bottom: 0.4em;
+  }
+
+  .hero-heading br {
+    display: none;
+  }
+
+  .hero-mainLine {
+    font-size: 1.3rem;
+    width: 100%;
+  }
+
+  .hero-cta {
+    padding: 0.6em 2em;
+    font-size: 1.5rem;
+    width: 85%;
+  }
+}
+
+/* tablet responsive ends */
+
+/* hero section ends */

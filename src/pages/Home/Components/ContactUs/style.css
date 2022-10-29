@@ -1,0 +1,158 @@
+/* contactUs section starts */
+
+.contactUs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: url("../../../../assets/Images/contactUs.svg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.contactUs::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 1;
+}
+
+.contactUs-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 10;
+  padding: 3em;
+}
+
+.contactUs-title {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+
+.contactUs-p {
+  font-size: 1.1rem;
+  line-height: 2rem;
+  word-spacing: 3px;
+  margin-bottom: 1.5em;
+}
+
+.contactUs-btn {
+  padding: 1em 2em;
+  border: 1px solid #000;
+  font-size: 1.2rem;
+  background-color: #fff;
+  transition: background-color 0.3s ease-out;
+}
+
+.contactUs-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.contactUs-form-section {
+  width: 100%;
+  z-index: 10;
+}
+
+.contactUs-form {
+  width: 90%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2.5em;
+  margin: 0 auto;
+  box-shadow: 0 10px 15px -3px rgb(125 59 236 / 10%),
+    0 4px 6px -2px rgb(125 59 236 / 5%);
+}
+
+.contactUs-form-label {
+  font-size: 1.3rem;
+  margin-bottom: 0.3em;
+}
+
+.contactUs-form-input {
+  width: 100%;
+  height: 3em;
+  margin-bottom: 1.5em;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  padding: 0.5em;
+}
+
+.contactUs-form-input-message {
+  height: 10em;
+}
+
+.contactUs-form-btn {
+  background-color: var(--secondary-color);
+  padding: 0.5em 2em;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-radius: 5px;
+  color: #fff;
+  transition: 0.3s color ease-out;
+  width: 10em;
+}
+
+.contactUs-form-btn:hover {
+  background-color: var(--tertiary-color);
+  box-shadow: 3px 3px 10px rgba(0, 150, 100, 0.3);
+}
+
+/* tablet responsive starts */
+
+@media only screen and (max-width: 768px) {
+  .contactUs {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2em;
+    background: none;
+    position: static;
+    margin-bottom: 3em;
+  }
+
+  .contactUs::before {
+    display: none;
+  }
+
+  .contactUs-info {
+    align-items: center;
+    text-align: center;
+    padding: 0;
+  }
+
+  .contactUs-p {
+    font-size: 1.1rem;
+  }
+
+  .contactUs-btn {
+    width: 100%;
+  }
+
+  .contactUs-form {
+    width: 100%;
+    padding: 2em 1em;
+  }
+
+  .contactUs-form-input {
+    height: 2.5em;
+    line-height: 2rem;
+    padding: 0.5em;
+  }
+
+  .contactUs-form-input-message {
+    height: 10em;
+  }
+
+  .contactUs-form-btn {
+    width: 100%;
+  }
+}
+
+/* tablet responsive ends */
+
+/* contactUs section ends */
